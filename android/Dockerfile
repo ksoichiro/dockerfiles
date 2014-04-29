@@ -39,3 +39,6 @@ RUN rm -f android-sdk_r22.6-linux.tgz
 ENV ANDROID_HOME /android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
 RUN echo y | android update sdk --filter platform-tools,build-tools-19.0.3,android-17,extra-android-support --no-ui --force
+
+# Git to pull external repositories of Android app projects
+RUN apt-get install -y --no-install-recommends git
