@@ -1,6 +1,8 @@
 android
 =======
 
+Android SDK for development.
+
 ## Contents
 
 * Ubuntu 12.04 Precise 64bit
