@@ -12,6 +12,7 @@ RUN echo no | android create avd --force -n test -t android-17
 RUN cd /opt && wget -q http://dl.google.com/android/ndk/android-ndk-r9d-linux-x86_64.tar.bz2
 
 RUN apt-get install -y bzip2
+RUN apt-get install -y make
 RUN cd /opt && tar xjvf android-ndk-r9d-linux-x86_64.tar.bz2
 
 ENV ANDROID_NDK_HOME /opt/android-ndk-r9d
