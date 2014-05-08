@@ -14,9 +14,9 @@ RUN cd /opt && wget -q http://dl.google.com/android/ndk/android-ndk-r9d-linux-x8
 RUN apt-get install -y bzip2
 RUN cd /opt && tar xjvf android-ndk-r9d-linux-x86_64.tar.bz2
 
-ENV ANDROID_NDK_HOME /opt/android-ndk-r9d$
-ENV ANDROID_NDK ${ANDROID_NDK_HOME}$
-ENV ANDROID_NDK_ROOT ${ANDROID_NDK}$
+ENV ANDROID_NDK_HOME /opt/android-ndk-r9d
+ENV ANDROID_NDK ${ANDROID_NDK_HOME}
+ENV ANDROID_NDK_ROOT ${ANDROID_NDK}
 ENV PATH ${PATH}:${ANDROID_NDK_HOME}
 
 # Avoid emulator assumes HOME as '/'.
