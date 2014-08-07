@@ -9,7 +9,7 @@ RUN apt-get install -y -qq --no-install-recommends openjdk-6-jdk libgd2-xpm ia32
 
 # Main Android SDK
 RUN apt-get install -y --no-install-recommends wget
-RUN cd /opt && wget -q http://dl.google.com/android/android-sdk_r22.6-linux.tgz
+RUN cd /opt && wget -q https://dl.google.com/android/android-sdk_r22.6-linux.tgz
 RUN cd /opt && tar xzf android-sdk_r22.6-linux.tgz
 RUN cd /opt && rm -f android-sdk_r22.6-linux.tgz
 
