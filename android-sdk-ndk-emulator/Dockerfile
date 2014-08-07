@@ -9,7 +9,7 @@ RUN echo y | android update sdk --filter platform-tools,build-tools-19.0.3,sysim
 # Set up and run emulator
 RUN echo no | android create avd --force -n test -t android-17
 
-RUN cd /opt && wget -q http://dl.google.com/android/ndk/android-ndk-r9d-linux-x86_64.tar.bz2
+RUN cd /opt && wget -q https://dl.google.com/android/ndk/android-ndk-r9d-linux-x86_64.tar.bz2
 
 RUN apt-get install -y bzip2
 RUN apt-get install -y make

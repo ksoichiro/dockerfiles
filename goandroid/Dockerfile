@@ -16,7 +16,7 @@ RUN apt-get upgrade -qq
 RUN apt-get install -y -qq --no-install-recommends wget git mercurial bzip2 gcc build-essential
 
 # Install Android NDK
-RUN cd /opt && wget http://dl.google.com/android/ndk/android-ndk-r9d-linux-x86_64.tar.bz2
+RUN cd /opt && wget https://dl.google.com/android/ndk/android-ndk-r9d-linux-x86_64.tar.bz2
 RUN cd /opt && tar xjf android-ndk-r9d-linux-x86_64.tar.bz2
 RUN rm -f /opt/android-ndk-r9d-linux-x86_64.tar.bz2
 RUN $NDK/build/tools/make-standalone-toolchain.sh --platform=android-9 --install-dir=$NDK_ROOT --system=linux-x86_64
